@@ -1,0 +1,211 @@
+{
+  "scores": [
+    {
+      "id": 1782203195649,
+      "name": "Ggvtkh",
+      "email": "grgggth",
+      "score": 2600,
+      "total": 3,
+      "topic": "mine",
+      "created_at": "2026-06-23T08:26:35.649Z"
+    }
+  ],
+  "archives": [
+    {
+      "archived_at": "2026-06-22T02:07:04.051Z",
+      "scores": [
+        {
+          "id": 1782093790739,
+          "name": "dfgfd",
+          "email": "ere",
+          "score": 7,
+          "total": 9,
+          "topic": "tech",
+          "created_at": "2026-06-22T02:03:10.739Z"
+        },
+        {
+          "id": 1782094010911,
+          "name": "ArchiveTest",
+          "email": "test@archive.com",
+          "score": 5,
+          "total": 9,
+          "topic": "space",
+          "created_at": "2026-06-22T02:06:50.911Z"
+        }
+      ]
+    },
+    {
+      "archived_at": "2026-06-23T06:12:18.856Z",
+      "scores": [
+        {
+          "id": 1782094148568,
+          "name": "dr",
+          "email": "wr4t5y6ui",
+          "score": 2,
+          "total": 9,
+          "topic": "history",
+          "created_at": "2026-06-22T02:09:08.568Z"
+        },
+        {
+          "id": 1782192941345,
+          "name": "Tester",
+          "email": "tester@example.com",
+          "score": 7,
+          "total": 9,
+          "topic": "tech",
+          "created_at": "2026-06-23T05:35:41.345Z"
+        },
+        {
+          "id": 1782193652270,
+          "name": "GamifiedTester",
+          "email": "gamified@example.com",
+          "score": 1,
+          "total": 9,
+          "topic": "tech",
+          "created_at": "2026-06-23T05:47:32.270Z"
+        },
+        {
+          "id": 1782193816239,
+          "name": "er3wg",
+          "email": "q344t3",
+          "score": 7,
+          "total": 9,
+          "topic": "tech",
+          "created_at": "2026-06-23T05:50:16.239Z"
+        },
+        {
+          "id": 1782194785755,
+          "name": "AudioStreakTester",
+          "email": "audiostreak@example.com",
+          "score": 2467,
+          "total": 9,
+          "topic": "tech",
+          "created_at": "2026-06-23T06:06:25.755Z"
+        },
+        {
+          "id": 1782195124810,
+          "name": "jhgf",
+          "email": "iuytr",
+          "score": 6200,
+          "total": 9,
+          "topic": "tech",
+          "created_at": "2026-06-23T06:12:04.811Z"
+        }
+      ]
+    },
+    {
+      "archived_at": "2026-06-23T07:16:24.410Z",
+      "scores": [
+        {
+          "id": 1782195897411,
+          "name": "CreatorTester",
+          "email": "creator@example.com",
+          "score": 533,
+          "total": 3,
+          "topic": "science-facts",
+          "created_at": "2026-06-23T06:24:57.411Z"
+        },
+        {
+          "id": 1782196033070,
+          "name": "CreatorTester",
+          "email": "creator@example.com",
+          "score": 633,
+          "total": 3,
+          "topic": "science-facts",
+          "created_at": "2026-06-23T06:27:13.070Z"
+        },
+        {
+          "id": 1782196161211,
+          "name": "CreatorTester",
+          "email": "creator@example.com",
+          "score": 633,
+          "total": 3,
+          "topic": "science-facts",
+          "created_at": "2026-06-23T06:29:21.211Z"
+        },
+        {
+          "id": 1782196352098,
+          "name": "CreatorTester",
+          "email": "creator@example.com",
+          "score": 600,
+          "total": 3,
+          "topic": "science-facts",
+          "created_at": "2026-06-23T06:32:32.098Z"
+        },
+        {
+          "id": 1782196507826,
+          "name": "CreatorTester",
+          "email": "creator@example.com",
+          "score": 633,
+          "total": 3,
+          "topic": "science-facts",
+          "created_at": "2026-06-23T06:35:07.826Z"
+        },
+        {
+          "id": 1782196640633,
+          "name": "CreatorTester",
+          "email": "creator@example.com",
+          "score": 633,
+          "total": 3,
+          "topic": "science-facts",
+          "created_at": "2026-06-23T06:37:20.633Z"
+        },
+        {
+          "id": 1782196779135,
+          "name": "CreatorTester",
+          "email": "creator@example.com",
+          "score": 600,
+          "total": 3,
+          "topic": "science-facts",
+          "created_at": "2026-06-23T06:39:39.135Z"
+        },
+        {
+          "id": 1782198971831,
+          "name": "edede",
+          "email": "iuytr",
+          "score": 800,
+          "total": 3,
+          "topic": "geology",
+          "created_at": "2026-06-23T07:16:11.831Z"
+        }
+      ]
+    },
+    {
+      "archived_at": "2026-06-23T08:14:21.894Z",
+      "scores": [
+        {
+          "id": 1782199155626,
+          "name": "arfrw",
+          "email": "dfgeg",
+          "score": 800,
+          "total": 1,
+          "topic": "mine",
+          "created_at": "2026-06-23T07:19:15.626Z"
+        },
+        {
+          "id": 1782202431985,
+          "name": "dfgfsfsgsf",
+          "email": "sfgffg",
+          "score": 2400,
+          "total": 3,
+          "topic": "mine",
+          "created_at": "2026-06-23T08:13:51.985Z"
+        }
+      ]
+    },
+    {
+      "archived_at": "2026-06-23T08:16:27.970Z",
+      "scores": [
+        {
+          "id": 1782202555129,
+          "name": "jfjfbnb",
+          "email": "iuytr",
+          "score": 7034,
+          "total": 9,
+          "topic": "tech",
+          "created_at": "2026-06-23T08:15:55.129Z"
+        }
+      ]
+    }
+  ]
+}

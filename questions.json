@@ -1,0 +1,224 @@
+{
+  "history": {
+    "easy": [
+      {
+        "type": "multiple-choice",
+        "question": "Who was the first Emperor of Rome?",
+        "options": [
+          "Julius Caesar",
+          "Augustus",
+          "Nero",
+          "Marcus Aurelius"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "type": "multiple-choice",
+        "question": "In what year did Christopher Columbus first reach the Americas?",
+        "options": [
+          "1492",
+          "1620",
+          "1066",
+          "1776"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which empire built the city of Machu Picchu?",
+        "options": [
+          "Aztec",
+          "Maya",
+          "Inca",
+          "Olmec"
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "medium": [
+      {
+        "type": "text",
+        "question": "What city was the capital of the Roman Empire?",
+        "correctAnswer": "Rome"
+      },
+      {
+        "type": "text",
+        "question": "Who was the British Prime Minister during most of World War II (last name)?",
+        "correctAnswer": "Churchill"
+      },
+      {
+        "type": "text",
+        "question": "Which ancient wonder was located in Alexandria, Egypt (one word)?",
+        "correctAnswer": "Lighthouse"
+      }
+    ],
+    "hard": [
+      {
+        "type": "picture",
+        "question": "What famous historical structure is this?",
+        "imageUrl": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "correctAnswer": "Colosseum"
+      },
+      {
+        "type": "picture",
+        "question": "Which ancient pyramid is this?",
+        "imageUrl": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "correctAnswer": "Giza"
+      },
+      {
+        "type": "picture",
+        "question": "What is the name of this iconic French tower?",
+        "imageUrl": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "correctAnswer": "Eiffel Tower"
+      }
+    ]
+  },
+  "tech": {
+    "easy": [
+      {
+        "type": "multiple-choice",
+        "question": "What does HTML stand for?",
+        "options": [
+          "Hyper Text Markup Language",
+          "High Tech Modern Language",
+          "Hyper Transfer Markup Language",
+          "Home Tool Markup Language"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What CSS property is used to make text bold?",
+        "options": [
+          "font-weight",
+          "text-style",
+          "font-style",
+          "bold"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Which of the following is NOT a JavaScript data type?",
+        "options": [
+          "String",
+          "Boolean",
+          "Float",
+          "Undefined"
+        ],
+        "correctAnswer": 2
+      }
+    ],
+    "medium": [
+      {
+        "type": "text",
+        "question": "In React, what hook is used to manage local state?",
+        "correctAnswer": "useState"
+      },
+      {
+        "type": "text",
+        "question": "What does CSS stand for? (First word)",
+        "correctAnswer": "Cascading"
+      },
+      {
+        "type": "text",
+        "question": "Which keyword is used to declare a constant variable in JavaScript?",
+        "correctAnswer": "const"
+      }
+    ],
+    "hard": [
+      {
+        "type": "picture",
+        "question": "Which programming language is represented by this logo?",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+        "correctAnswer": "Python"
+      },
+      {
+        "type": "picture",
+        "question": "Which popular JavaScript library uses this logo?",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+        "correctAnswer": "React"
+      },
+      {
+        "type": "picture",
+        "question": "Which version control system uses this logo?",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
+        "correctAnswer": "Git"
+      }
+    ]
+  },
+  "space": {
+    "easy": [
+      {
+        "type": "multiple-choice",
+        "question": "Which planet is known as the Red Planet?",
+        "options": [
+          "Venus",
+          "Jupiter",
+          "Mars",
+          "Saturn"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the largest planet in our solar system?",
+        "options": [
+          "Earth",
+          "Saturn",
+          "Jupiter",
+          "Neptune"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "type": "multiple-choice",
+        "question": "Who was the first human to travel into space?",
+        "options": [
+          "Neil Armstrong",
+          "Yuri Gagarin",
+          "John Glenn",
+          "Buzz Aldrin"
+        ],
+        "correctAnswer": 1
+      }
+    ],
+    "medium": [
+      {
+        "type": "text",
+        "question": "What is the hottest planet in our solar system?",
+        "correctAnswer": "Venus"
+      },
+      {
+        "type": "text",
+        "question": "Which galaxy is closest to the Milky Way?",
+        "correctAnswer": "Andromeda"
+      },
+      {
+        "type": "text",
+        "question": "What is the name of our solar system's star?",
+        "correctAnswer": "Sun"
+      }
+    ],
+    "hard": [
+      {
+        "type": "picture",
+        "question": "Which planet is this?",
+        "imageUrl": "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "correctAnswer": "Earth"
+      },
+      {
+        "type": "picture",
+        "question": "What phase of the moon is this?",
+        "imageUrl": "https://images.unsplash.com/photo-1532698263595-65fc4f305c74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "correctAnswer": "Full"
+      },
+      {
+        "type": "picture",
+        "question": "Which planet is famous for these rings?",
+        "imageUrl": "https://images.unsplash.com/photo-1614728263952-84ea256f9679?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "correctAnswer": "Saturn"
+      }
+    ]
+  }
+}

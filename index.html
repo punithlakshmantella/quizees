@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Play fun quizzes on World History, Space, Web Dev and more!">
+    <title>quizes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video class="background-video" autoplay muted loop playsinline src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4"></video>
+
+    <main class="app-container">
+        <!-- Start Screen (Dashboard Mode) -->
+        <section id="start-screen" class="screen active">
+            <div class="dashboard-header">
+                <div class="logo-text fade-slide-up" style="animation-delay: 0.2s;">
+                    <span class="icon">✨</span> quizes
+                </div>
+                <div class="search-container fade-slide-up" style="animation-delay: 0.4s;">
+                    <input type="text" id="quiz-search" placeholder="🔍 Search quizzes..." autocomplete="off">
+                </div>
+                <button id="open-creator-btn" class="primary-btn compact-btn fade-slide-up" style="animation-delay: 0.6s;">Create Quiz 🛠️</button>
+            </div>
+            
+            <div class="hero-section">
+                <h2 class="fade-slide-up" style="animation-delay: 0.7s;">Test Your Knowledge!</h2>
+                <p class="fade-slide-up" style="animation-delay: 0.9s;">Complete all 3 levels in one go: Multiple Choice → Type Answer → Picture Guess!</p>
+            </div>
+            
+            <div id="quiz-cards-grid" class="quiz-grid">
+                <!-- Quiz Cards will be dynamically injected here -->
+            </div>
+        </section>
+
+        <!-- Creator Screen -->
+        <section id="creator-screen" class="screen">
+            <div class="logo" style="font-size: 2.5rem; margin-bottom: 0.5rem;">
+                <span class="icon">🛠️</span>
+            </div>
+            <h2>Create Custom Quiz</h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.95rem;">Build custom topics with MCQs, text answers, or picture guessing.</p>
+            
+            <div class="input-group" style="max-width: 100%; margin-bottom: 20px;">
+                <input type="text" id="creator-title" placeholder="Quiz Title (e.g. Science)" required autocomplete="off" style="text-align: center;">
+            </div>
+
+            <div id="creator-questions-list" class="creator-questions-list">
+                <!-- Question cards will be dynamically added here -->
+            </div>
+
+            <div class="creator-actions" style="margin-top: 20px; width: 100%;">
+                <button id="add-question-btn" class="secondary-btn" style="width: 100%; border-style: dashed; padding: 14px;">+ Add Question</button>
+                <div style="display: flex; gap: 15px; margin-top: 25px; width: 100%; justify-content: center;">
+                    <button id="cancel-creator-btn" class="secondary-btn" style="border-color: var(--incorrect); color: var(--incorrect); flex: 1;">Cancel</button>
+                    <button id="save-quiz-btn" class="primary-btn" style="flex: 1; justify-content: center;">Save Quiz 💾</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <span id="question-progress" class="progress-text">Question 1 of 9</span>
+                <div id="streak-pill" class="streak-pill hidden">🔥 Streak: 0</div>
+                <div class="level-pill" id="level-pill">🟢 Level 1</div>
+                <div class="score-pill">Score: <span id="current-score">0</span></div>
+                <button id="mute-btn" class="mute-btn" aria-label="Toggle sound">🔊</button>
+            </div>
+            <div class="timer-container">
+                <div id="timer-bar" class="timer-bar"></div>
+                <span id="timer-text">15s</span>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            
+            <h2 id="question-text" class="question-text">Loading question...</h2>
+            
+            <div id="question-image-container" class="question-image-container hidden">
+                <img id="question-image" src="" alt="Guess the picture">
+            </div>
+
+            <div id="options-container" class="options-grid">
+                <!-- Options will be injected here -->
+            </div>
+
+            <div id="text-input-container" class="text-input-container hidden">
+                <input type="text" id="text-answer-input" placeholder="Type your answer here..." autocomplete="off">
+                <button id="submit-answer-btn" class="secondary-btn">Submit Answer</button>
+                <p id="text-feedback" class="text-feedback hidden"></p>
+            </div>
+            
+            <div class="quiz-footer">
+                <button id="next-btn" class="primary-btn hidden">Next Question</button>
+            </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="result-screen" class="screen">
+            <div class="trophy">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p><span id="result-name">Participant</span>, you got <span id="correct-count">0</span> / <span id="total-questions">5</span> correct!</p>
+            <div class="final-score">
+                <span id="final-score">0</span> <span style="font-size: 1.5rem; display: block; font-weight: 600; color: var(--text-muted); margin-top: -10px;">Points</span>
+            </div>
+            <p id="feedback-message" class="feedback-message">Great job!</p>
+            
+            <div class="leaderboard-container">
+                <h3>🏆 Top 5 Leaderboard</h3>
+                <ul id="leaderboard-list" class="leaderboard-list">
+                    <!-- Leaderboard items will be injected here -->
+                </ul>
+                <button id="clear-leaderboard-btn" class="secondary-btn">Clear Leaderboard</button>
+            </div>
+
+            <div class="review-container">
+                <h3>📊 Performance Review</h3>
+                <div id="review-list" class="review-list">
+                    <!-- Review items will be injected here -->
+                </div>
+            </div>
+
+            <button id="restart-btn" class="primary-btn">Play Again ↻</button>
+        </section>
+    </main>
+
+    <div id="reaction-overlay" class="reaction-overlay hidden">
+        <div class="reaction-card">
+            <div id="reaction-emoji" class="reaction-emoji">🔥</div>
+            <h3 id="reaction-title" class="reaction-title">Correct!</h3>
+            <p id="reaction-subtitle" class="reaction-subtitle">+100 XP</p>
+            <button id="reaction-close-btn" class="primary-btn">Continue <span class="arrow">→</span></button>
+        </div>
+    </div>
+
+    <!-- Participant Details Modal -->
+    <div id="participant-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="logo" style="font-size: 2.5rem; margin-bottom: 0.5rem;">
+                <span class="icon">🚀</span>
+            </div>
+            <h3>Join the Quiz</h3>
+            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.95rem;">Enter your details to start playing!</p>
+            <div class="input-group" style="max-width: 100%; margin-bottom: 25px;">
+                <input type="text" id="participant-name" placeholder="Your Name" required autocomplete="off">
+                <input type="email" id="participant-email" placeholder="Your Email" required autocomplete="off">
+            </div>
+            <div style="display: flex; gap: 15px; width: 100%; justify-content: center;">
+                <button id="cancel-play-btn" class="secondary-btn" style="flex: 1; padding: 12px;">Cancel</button>
+                <button id="confirm-play-btn" class="primary-btn" style="flex: 1; justify-content: center; padding: 12px 24px;">Start Quiz <span class="arrow">→</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
